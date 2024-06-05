@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <style>
+        body {
+            background-color: rgb(77, 71, 71);
+            color: rgba(108, 128, 240, 0.664);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            text-align: center;
+            color: aliceblue;
+            background-color: black;
+            box-shadow: 1px 3px 3px rgb(231, 231, 235);
+            
+        }
+        form {
+            
+            position: absolute;
+            background-color: rgb(26, 25, 25);
+            border: 4px solid rgba(12, 12, 12, 0.651);
+            box-shadow: 5px 4px 4px 2px black;
+            top:25% ;
+            left: 38%;
+            padding: 100px;
+
+        }
+        p {
+            font-weight:bold;
+            font-size: 30px;
+            
+            
+        }
+        #mais {
+            margin: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>exemplo de formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+    <h1 id="calc">calculadora</h1>
+        <p>
+            <label for="in1">Numero </label>
+            <input type="number" name="n1" id="in1" min="0" max="100000000" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+        </p>
+        <p id="mais">+</p>    
+        <p>
+
+            <label for="in2">Numero </label>
+            <input type="number" name="n2" id="in2" min="0" max="100000000" required  oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+        </p>
+        <br>
+        <p>
+            <label for="isoma">resultado =</label>
+            <output name = "soma" id="isoma">0</output>
+        </p>
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </p>
+    </form>
+</body>
+</html>
