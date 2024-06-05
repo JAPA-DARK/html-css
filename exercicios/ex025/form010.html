@@ -14,7 +14,7 @@
             width: 100vw;
             font-family: monospace , Helvetica, sans-serif;
             margin: auto;
-            background-color: rgba(81, 105, 114, 0.555);
+            background-color: rgb(107, 100, 100);
             min-width: 320px;
             max-width: 1440;
         }
@@ -33,19 +33,29 @@
         form {
             background-color: rgb(36, 35, 35);
             color: white;
-            border: 4px solid rgba(12, 12, 12, 0.651);
+            border: 4px solid rgba(12, 12, 12, 0.651);    
             width: 100%;
             padding: 30px;
             
+        }
+        footer {
+            background-color: rgba(0, 0, 0, 0.699);
+            color: aliceblue;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bolder;
+        }
+        .creditos {
+            padding: 2px;
+        }
+        footer a:hover {
+            color: rgb(59, 255, 33);
         }
 
     </style>
 </head>
 <body>
     <h1>Qual é a sua idade meu nobre?</h1>
-   
-
-    <div>
             <form action="cadastro.php" method="get" autocomplete="on">
             <p>
                 <label for="iano">em que ano você nasceu?</label>
@@ -61,7 +71,9 @@
                 <input type="reset" value="limpar">
             </p>
         </form>
-    </div>
+        <footer>
+            <p class="creditos">site criado pelo <a href="https://www.instagram.com/dev.ariel_7/" target="_blank">Dev.ariel_</a></p>
+        </footer>
 <script>
     function calcIdade() {
         let atual = new Date().getFullYear()
