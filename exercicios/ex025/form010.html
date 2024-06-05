@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulário</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        html,body {
+            height: 100vh;
+            width: 100vw;
+            font-family: monospace , Helvetica, sans-serif;
+            margin: auto;
+            background-color: rgba(81, 105, 114, 0.555);
+        }
+        h1 {
+            font-family: 'Lucida Sans',  Arial, Helvetica, sans-serif;
+            border: 1px solid black;
+            background-color: black;
+            color: rgb(178, 241, 233);
+            text-align: center;
+        }
+        #tema{
+            background-color: rgb(36, 35, 35);
+            position: absolute;
+            top:50% ;
+            left: 50%;
+            width: 300px;
+            height: 120px;
+            transform: translate(-50%,-245%);
+            text-align: center;
+            color: aliceblue;
+            border: 4px solid rgba(12, 12, 12, 0.651);
+            box-shadow: 5px 3px 2px  rgba(0, 0, 0, 0.719);
+        }
+        p {
+            padding: 8px;
+        }
+        form {
+        position: absolute;
+            background-color: rgb(36, 35, 35);
+            color: white;
+            border: 4px solid rgba(12, 12, 12, 0.651);
+            box-shadow: 5px 4px 4px 2px black;
+            top:50% ;
+            left: 50%;
+            width: 300px;
+            height: 120px;
+            transform: translate(-50%,-50%);
+            padding: 130px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Qual é a sua idade meu nobre?</h1>
+    <h1 id="tema">calculadora de idade</h1>
+
+    <div>
+            <form action="cadastro.php" method="get" autocomplete="on">
+            <p>
+                <label for="iano">em que ano você nasceu?</label>
+                <input type="number" name="ano" id="iano" min="1900" max="2024"
+                oninput="calcIdade()">
+            </p>
+            <p>
+                <label for="iidade">esse ano você faz</label>
+                <output id="iidade">0</output>
+            </p>
+            <p>
+                <input type="submit" value="enviar">
+                <input type="reset" value="limpar">
+            </p>
+        </form>
+    </div>
+<script>
+    function calcIdade() {
+        let atual = new Date().getFullYear()
+        iidade.innerHTML = Number(atual) - Number(iano.value)
+    }
+</script>
+</body>
+</html>
