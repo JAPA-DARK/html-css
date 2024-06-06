@@ -5,41 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>formulario</title>
     <style>
-        body {
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+        html , body {
             background-color: rgb(77, 71, 71);
             font-family: Arial, Helvetica, sans-serif;
+            width: 650;
+            height: 548;
         }
         h1 {
-            text-align: center;
             color: aliceblue;
-            background-color: black;
-            box-shadow: 1px 3px 3px rgb(231, 231, 235);
+            margin: 20px;
+            
             
         }
         form {
-            
-            position: absolute;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+            padding: 20px;
             background-color: rgb(36, 35, 35);
             color: white;
-            border: 4px solid rgba(12, 12, 12, 0.651);
-            box-shadow: 5px 4px 4px 2px black;
-            top:25% ;
-            left: 38%;
-            padding: 100px;
+            border: 1px solid rgba(12, 12, 12, 0.651);
+            
 
         }
         p {
-            font-weight:bold;
-            font-size: 30px;
-            color: rgb(209, 209, 209);
+            padding: 20px;
+           
             
             
-        }
-        #mais {
-            margin: 30px;
         }
         p#resul {
             color: rgba(245, 46, 46, 0.678);
+            font-weight: bold;
+            font-size: 2.5em;
         }
     </style>
 </head>
@@ -49,13 +50,13 @@
 
     <h1 id="calc">calculadora</h1>
         <p>
-            <label for="in1">Numero </label>
+            <label for="in1">Numero 1 </label>
             <input type="number" name="n1" id="in1" min="0" max="100000000" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
         </p>
         <p id="mais">+</p>    
         <p>
 
-            <label for="in2">Numero </label>
+            <label for="in2">Numero 2</label>
             <input type="number" name="n2" id="in2" min="0" max="100000000" required  oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
         </p>
         <br>
