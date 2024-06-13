@@ -11,12 +11,12 @@
 html, body {
     width: 100vw;
     height: 100vh;
-    background-color: rgb(62, 64, 180);
+    background-color: #233eff;
     background-size: contain;
     background-repeat: no-repeat;
 } 
 h1 {
     color: aliceblue;
-    text-shadow: 3px 3px 8px rgb(18, 19, 53);
+    text-shadow: 3px 3px 8px #101c77;
     padding: 10px;
 }
