@@ -45,3 +45,14 @@ img#tablet { display: none;}
 img#impressora { display: none;}
 img#desktop { display: none;}
 img#tv { display: none;}
+
+footer {
+    margin-top: 587px;
+    height: 30px;
+    position: sticky;
+    text-align: center;
+    font-family: cursive, Arial, Helvetica, sans-serif;
+    background-color: rgba(182, 175, 175, 0.151);
+    color: rgb(78, 1, 78);
+    box-shadow: 2px 2px 2px;
+}
