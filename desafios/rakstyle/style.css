@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+@import url('https://fonts.cdnfonts.com/css/bauhaus-93');
+                
+@font-face {
+    font-family:'rak';
+    src: url(fontes/Bauhaus\ 93\ Regular.ttf);
+}
+
+:root {
+
+    --cor1: #646669;
+    --cor2: #206EBD;
+    --cor3: #282B3C;
+    --cor4: #000000;
+
+    --font-padrao:'rak';
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--cor4)
+}
+header {
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor3));
+    min-height: 150px;
+    text-align: center;
+    padding: 40px;
+    margin: -20px;
+}
+header h1 {
+    color: white;
+    font-family: var(--font-padrao);
+}
+nav {
+
+    background-color: var(--cor3);
+    padding: 15px;
+    margin: -10px;
+}
+nav a {
+    color: var(--cor0);
+    padding: 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.7s;
+}
+nav > a:hover {
+    background-color: var(--cor2);
+    color:white;
+}
+main {
+    text-align: center;
+    padding: 30px;
+    color: white;
+}
+footer {
+    background-color: var(--cor3);
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
+footer a { 
+    color: var(--cor1);
+    font-weight: bolder;
+}

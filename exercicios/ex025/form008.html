@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+        html , body {
+            background-color: rgb(77, 71, 71);
+            font-family: Arial, Helvetica, sans-serif;
+            width: 650;
+            height: 548;
+        }
+        h1 {
+            color: aliceblue;
+            margin: 20px;
+            
+            
+        }
+        form {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+            padding: 20px;
+            background-color: rgb(36, 35, 35);
+            color: white;
+            border: 1px solid rgba(12, 12, 12, 0.651);
+            
+
+        }
+        p {
+            padding: 20px;
+           
+            
+            
+        }
+        p#resul {
+            color: rgba(245, 46, 46, 0.678);
+            font-weight: bold;
+            font-size: 2.5em;
+        }
+    </style>
+</head>
+<body>
+    <h1>exemplo de formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+    <h1 id="calc">calculadora</h1>
+        <p>
+            <label for="in1">Numero 1 </label>
+            <input type="number" name="n1" id="in1" min="0" max="100000000" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+        </p>
+        <p id="mais">+</p>    
+        <p>
+
+            <label for="in2">Numero 2</label>
+            <input type="number" name="n2" id="in2" min="0" max="100000000" required  oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+        </p>
+        <br>
+        <p id="resul">
+            <label for="isoma">resultado =</label>
+            <output name = "soma" id="isoma">0</output>
+        </p>
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </p>
+    </form>
+</body>
+</html>

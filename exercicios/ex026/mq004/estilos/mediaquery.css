@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+/*TODAS AS DEMAIS MIDIAS */
+
+/* typical device breakpoints
+pequenas telas: até 600px
+celular: 600px até 768px
+tablet: 768px até 992px
+desktop: 992px até 1200px
+grandes telas acima de 1200px
+*/
+@media print { /*impressora */
+    
+        * {font-family: 'Courier New', Courier, monospace;}
+        
+        body {
+        background-image: url(../imagens/back-print.jpg) /*desnecessario*/
+        }
+        main {
+            border: solid 2px black;
+        }
+        main::after {
+            content: 'essa impressão foi feita atraves dos meus estudos ass:dev.ariel_7 espero que tenha gostado do resultado...';
+            text-decoration:overline;
+        }
+        main,h1 {
+            text-shadow: none;
+            color: black;
+        }
+        footer {
+            color: black;
+        }
+
+img#phone { display: none;}
+img#tablet { display: none;}
+img#impressora { display: block;}
+img#desktop { display: none;}
+img#tv { display: none;}
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) { /*tablet */
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+    main {
+        width: 90vw;
+    }
+img#phone { display: none;}
+img#tablet { display: block;}
+img#impressora { display: none;}
+img#desktop { display: none;}
+img#tv { display: none;}
+
+}
+@media screen and (min-width: 992px) and (max-width: 1700px) { /*desktop */
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    } 
+    main {
+        width: 650px;
+    }
+img#phone { display: none;}
+img#tablet { display: none;}
+img#impressora { display: none;}
+img#desktop { display: block;}
+img#tv { display: none;}
+    
+}
+@media screen and (min-width: 1650px) {/*grandes telas*/
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    main {
+        width: 900px;
+    }
+img#phone { display: none;}
+img#tablet { display: none;}
+img#impressora { display: none;}
+img#desktop { display: none;}
+img#tv { display: block;}
+}

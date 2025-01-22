@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(92, 74, 74);
+            text-align: center;
+        }
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            margin: auto;
+        }
+        h1 {
+            display: inline-flex;
+            background-color: darkcyan;
+            box-shadow: 2px 3px 4px black;
+            border-radius: 3px 6px 3px 6px;
+            border-top: 2px solid  rgba(46, 61, 61, 0.932);
+            text-align: center;
+
+        }
+        caption {
+            text-align: center;
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 20px;
+            background-color: gray;
+            border: 1px solid black;
+        }
+        th, td {
+            border: 1px solid black;
+            text-align: center;
+            padding: 12px;
+        }
+        .cnome {
+            background-color: burlywood;
+        }
+        .csexo {
+            background-color: rgb(193, 235, 169);
+        }
+        .cgroup {
+            background-color: rgb(154, 225, 226);
+        }
+        div#container {
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>exercicio de tabela</h1>
+    <div class="container">
+        <table>
+            <tr>
+            <colgroup>
+                <col class="cnome">
+                <col class="csexo">
+                <col class="cgroup" span="2">
+            </colgroup>
+        
+            <caption>Cadastro</caption>
+            <tr>
+                <th scope="col">nome</th>
+                <th scope="col">sexo</th>
+                <th scope="col">idade</th>
+                <th scope="col">profissão</th>
+            </tr>
+            <tr>
+                <td>Brendha</td>
+                <td>F</td>
+                <td>20</td>
+                <td>PSICOLOGA</td>
+            </tr>
+            <tr>
+        
+                <td>Julia</td>
+                <td>F</td>
+                <td>19</td>
+                <td>JORNALISTA</td>
+            </tr>
+            <tr>
+                <td>Ariel</td>
+                <td>M</td>
+                <td>19</td>
+                <td>ALA-ARMADOR</td>
+            </tr>
+            <tr>
+                <td>Otávio</td>
+                <td>M</td>
+                <td>13</td>
+                <td>ARMADOR</td>
+            </tr>
+            <tr>
+                <td>Taynara</td>
+                <td>F</td>
+                <td>20</td>
+                <td>CONFEITERA</td>
+            </tr>
+            <tr>
+                <td>Pelé</td>
+                <td>M</td>
+                <td>17</td>
+                <td>ARMADOR</td>
+            </tr>
+            <tr>
+                <td>Miguel</td>
+                <td>M</td>
+                <td>24</td>
+                <td>CAMINHONEIRO</td>
+            </tr>
+            <tr>
+                <td>Michel</td>
+                <td>M</td>
+                <td>18</td>
+                <td>ALA</td>
+            </tr>
+            <tr>
+                <td>Isabelly</td>
+                <td>F</td>
+                <td>20</td>
+                <td>ATENDENTE DE CAIXA</td>
+            </tr>
+            <tr>
+                <td>Valmir</td>
+                <td>m</td>
+                <td>16</td>
+                <td>ALA-PIVO</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
